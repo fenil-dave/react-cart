@@ -45,10 +45,16 @@ export const cartAppSlice = createSlice({
         },
         addToCart: (state, action) => {
             const currentCart = current(state.cart);
+            const currentInventory = current(state.inventory);
 
             state.cart = {
                 ...currentCart,
                 [action.payload]: (currentCart[action.payload] || 0) + 1,
+            };
+            state.inventory[action.payload] = {
+                ...currentInventory[action.payload],
+                quantity_available:
+                    currentInventory[action.payload].quantity_available - 1,
             };
         },
         bulkCartUpdate: (state, action) => {
