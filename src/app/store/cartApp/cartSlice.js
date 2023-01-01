@@ -2,6 +2,7 @@ import { createSelector, createSlice, current } from "@reduxjs/toolkit";
 import { getUniqueObjKeysFromProductList } from "app/utils/helpers";
 import { toast } from "react-toastify";
 import { ADDTION_OPERATION } from "./constants";
+import Fakedata from "app/@fakedata";
 
 const initialState = {
     products: [],
@@ -10,6 +11,7 @@ const initialState = {
     compareTableFields: {},
     compareGrid: 1,
     compareProducts: [],
+    inventory: {},
 };
 
 export const cartAppSlice = createSlice({
@@ -17,8 +19,9 @@ export const cartAppSlice = createSlice({
     initialState,
     // The `reducers` field lets us define reducers and generate associated actions
     reducers: {
-        setProducts: (state, action) => {
-            state.products = action.payload || [];
+        setProducts: (state) => {
+            state.products = Fakedata.mobileData || [];
+            state.inventory = Fakedata.inventory || {};
         },
         setCompareTableFields: (state, action) => {
             const selectedProducts = current(state).products.filter((item) =>
@@ -57,19 +60,36 @@ export const cartAppSlice = createSlice({
         },
         deleteProductFromCart: (state, action) => {
             const currentCart = { ...current(state.cart) };
+            const currentInventory = current(state.inventory);
+            const productCount = currentCart[action.payload];
             delete currentCart[action.payload];
             state.cart = currentCart;
+            state.inventory[action.payload] = {
+                ...currentInventory[action.payload],
+                quantity_available: productCount,
+            };
         },
         cartQuantityUpdate: (state, action) => {
             const currentCart = { ...current(state.cart) };
+            const currentInventory = current(state.inventory);
             const { id, operation } = action.payload;
             if (operation === ADDTION_OPERATION) {
                 state.cart[id] = currentCart[id] + 1;
             } else {
                 if (state.cart[id] === 1) {
+                    const productCount = currentCart[id];
                     delete currentCart[id];
                     state.cart = currentCart;
+                    state.inventory[id] = {
+                        ...currentInventory[id],
+                        quantity_available: productCount,
+                    };
                 } else {
+                    state.inventory[id] = {
+                        ...currentInventory[id],
+                        quantity_available:
+                            currentInventory[id].quantity_available + 1,
+                    };
                     state.cart[id] = currentCart[id] - 1;
                 }
             }
@@ -108,6 +128,29 @@ export const cartAppSlice = createSlice({
         clearCompare: (state) => {
             state.compareProducts = [];
         },
+        updateInventory: (state, action) => {
+            const currentInventory = current(state.inventory);
+            const currentCart = current(state.cart);
+            const updatedInventory = action.payload.reduce(
+                (updatedData, id) => {
+                    return {
+                        ...updatedData,
+                        [id]: {
+                            ...currentInventory[id],
+                            quantity_available:
+                                currentInventory[id].quantity_available -
+                                (currentCart[id] || 0),
+                        },
+                    };
+                },
+                {}
+            );
+
+            state.inventory = {
+                ...state.inventory,
+                ...updatedInventory,
+            };
+        },
     },
 });
 
@@ -121,6 +164,7 @@ export const {
     addProductCompare,
     clearCompare,
     bulkCartUpdate,
+    updateInventory,
 } = cartAppSlice.actions;
 
 export const getProducts = (state) => state.cartApp.products;

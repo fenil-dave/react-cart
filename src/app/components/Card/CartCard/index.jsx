@@ -16,6 +16,7 @@ import {
     ADDTION_OPERATION,
     SUBTRACTION_OPERATION,
 } from "app/store/cartApp/constants";
+import { shouldProductAddToCart } from "app/utils/helpers";
 import { useDispatch, useSelector } from "react-redux";
 
 import classes from "./CartCard.module.scss";
@@ -36,7 +37,12 @@ const CartCardContainer = ({ id }) => {
     };
 
     const handleUpdateQunatity = (operation) => {
-        dispatch(cartQuantityUpdate({ id, operation }));
+        if (
+            (operation === ADDTION_OPERATION && shouldProductAddToCart(id)) ||
+            operation === SUBTRACTION_OPERATION
+        ) {
+            dispatch(cartQuantityUpdate({ id, operation }));
+        }
     };
 
     return (

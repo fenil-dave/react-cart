@@ -21,6 +21,7 @@ import {
     removeProductCompare,
 } from "app/store/cartApp/cartSlice";
 import { createStructuredSelector } from "reselect";
+import { shouldProductAddToCart } from "app/utils/helpers";
 
 const ALLOWED_FIELDS = ["Colors", "Price", "Models"];
 
@@ -38,7 +39,9 @@ const ProductCard = ({ data }) => {
     const { misc, name } = data;
 
     const handleAddToCart = () => {
-        dispatch(addToCart(data.id));
+        if (shouldProductAddToCart(data.id)) {
+            dispatch(addToCart(data.id));
+        }
     };
 
     const handleCompareChange = (event) => {

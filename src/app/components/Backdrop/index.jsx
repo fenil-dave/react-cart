@@ -3,10 +3,10 @@ import {
     bulkCartUpdate,
     getCartState,
     setProducts,
+    updateInventory,
 } from "app/store/cartApp/cartSlice";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Fakedata from "app/@fakedata";
 import {
     LOCAL_STORAGE_COMPARE_PRODUCT_IDS,
     LOCAL_STORAGE_PRODUCT_IN_CART,
@@ -34,7 +34,12 @@ const BackdropContainer = () => {
         );
         dispatch(addProductCompare(productInCompare.slice(0, 3)));
         dispatch(bulkCartUpdate(productInCart));
-        dispatch(setProducts(Fakedata.mobileData));
+        dispatch(setProducts());
+        dispatch(
+            updateInventory(
+                Object.keys(productInCart).map((item) => parseInt(item, 10))
+            )
+        );
     }, []);
     return null;
 };
