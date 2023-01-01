@@ -1,7 +1,10 @@
 import { Box, Typography } from "@mui/material";
+import { getTotalCartPrice } from "app/store/cartApp/cartSlice";
+import { useSelector } from "react-redux";
 import classes from "./Total.module.scss";
 
 const TotalContainer = () => {
+    const totalPrice = useSelector(getTotalCartPrice);
     return (
         <Box className={classes.totalContainer}>
             <Typography
@@ -11,7 +14,7 @@ const TotalContainer = () => {
             >
                 Total
             </Typography>
-            <Typography>{`Rs. ${10000}`}</Typography>
+            <Typography>{`Rs. ${totalPrice}`}</Typography>
         </Box>
     );
 };

@@ -1,24 +1,30 @@
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
+import { AppBar, Badge, Box, Button, Toolbar, Typography } from "@mui/material";
+import WithCondition from "app/hoc/WithCondition";
+import { getTotalCartItems } from "app/store/cartApp/cartSlice";
+import { useMemo } from "react";
+import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 import classes from "./Appbar.module.scss";
 
-const navItems = [
-    {
-        name: "Home",
-        path: "/",
-    },
-    {
-        name: "Compare",
-        path: "/compare",
-    },
-    {
-        name: "Cart",
-        path: "/cart",
-    },
-];
-
 const AppbarContainer = () => {
+    const totalCartItems = useSelector(getTotalCartItems);
+    const navItems = useMemo(
+        () => [
+            {
+                name: "Home",
+                path: "/",
+            },
+            {
+                name: "Cart",
+                path: "/cart",
+                badge: true,
+                count: totalCartItems,
+            },
+        ],
+        [totalCartItems]
+    );
+
     return (
         <AppBar component="nav">
             <Toolbar>
@@ -31,13 +37,29 @@ const AppbarContainer = () => {
                 </Typography>
                 <Box sx={{ display: { xs: "none", sm: "block" } }}>
                     {navItems.map((item) => (
-                        <NavLink
-                            key={item.path}
-                            className={classes.navlink}
-                            to={item.path}
-                        >
-                            {item.name}
-                        </NavLink>
+                        <WithCondition
+                            when={item.badge}
+                            then={
+                                <Badge color="error" badgeContent={item.count}>
+                                    <NavLink
+                                        key={item.path}
+                                        className={classes.navlink}
+                                        to={item.path}
+                                    >
+                                        {item.name}
+                                    </NavLink>
+                                </Badge>
+                            }
+                            or={
+                                <NavLink
+                                    key={item.path}
+                                    className={classes.navlink}
+                                    to={item.path}
+                                >
+                                    {item.name}
+                                </NavLink>
+                            }
+                        />
                     ))}
                 </Box>
             </Toolbar>

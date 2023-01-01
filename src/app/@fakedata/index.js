@@ -2,14 +2,27 @@ import { data as mobileData } from "./mobileData";
 import { data as inventory } from "./inventory";
 // import { data as tempData } from "./tempdata";
 
+const getPrice = (data) => {
+    if (data.includes("₹ ")) {
+        return parseInt(
+            data.split("/")[0].replaceAll("₹ ", "").split(",").join(""),
+            10
+        );
+    }
+    return "30000";
+};
+
 export const reformatData = () => {
-    const tempObj = mobileData;
     console.log(
-        Object.keys(mobileData).map((item, index) => ({
-            ...tempObj[item],
-            name: item,
-            id: index + 1,
-        }))
+        mobileData.map((item, index) => {
+            return {
+                ...item,
+                misc: {
+                    ...item.misc,
+                    Price: getPrice(item.misc.Price),
+                },
+            };
+        })
     );
 };
 

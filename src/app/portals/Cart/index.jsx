@@ -1,16 +1,20 @@
 import CartCardContainer from "app/components/Card/CartCard";
-import Fakedata from "app/@fakedata";
 
 import classes from "./Cart.module.scss";
 import { Box } from "@mui/system";
 import TotalContainer from "./Total";
+import { useSelector } from "react-redux";
+import { getProductsInCart } from "app/store/cartApp/cartSlice";
 
 const CartContainer = () => {
-    const [firstData] = Fakedata.mobileData;
+    const productsInCart = useSelector(getProductsInCart);
+
     return (
         <>
             <Box className={classes.container}>
-                <CartCardContainer data={firstData} />
+                {productsInCart.map((productId) => (
+                    <CartCardContainer id={productId} />
+                ))}
             </Box>
             <TotalContainer />
         </>

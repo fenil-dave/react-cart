@@ -12,19 +12,22 @@ const Routing = () => {
         {
             path: "/",
             element: <PublicLayout />,
-            errorElement: <PageNotFoundError />,
+            errorElement: <PageNotFoundError error />,
             children: [
                 {
                     index: true,
                     element: <Home />,
+                    errorElement: <PageNotFoundError error />,
                 },
                 {
                     path: "/cart",
                     element: <CartContainer />,
+                    errorElement: <PageNotFoundError error />,
                 },
                 {
                     path: "/compare",
                     element: <CompareContainer />,
+                    errorElement: <PageNotFoundError error />,
                 },
                 {
                     path: "*",

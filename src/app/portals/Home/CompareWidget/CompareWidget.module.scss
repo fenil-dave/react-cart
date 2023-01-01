@@ -1,0 +1,33 @@
+.container {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    z-index: 1300;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    border-radius: 4px;
+    padding: 8px;
+    gap: 8px;
+
+    .compareBtn {
+        display: flex;
+        gap: 8px;
+
+        color: #ffffff;
+        cursor: pointer;
+        p {
+            font-size: 0.875rem;
+        }
+
+        .compareCount {
+            background-color: #0a5fb5;
+            padding: 0px 4px;
+        }
+    }
+
+    .clearBtn {
+        border-radius: 4px;
+        padding: 0px;
+    }
+}

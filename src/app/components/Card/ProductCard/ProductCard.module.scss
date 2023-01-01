@@ -6,7 +6,6 @@
     grid-template-columns: auto 3fr;
     align-items: flex-start;
     overflow: visible !important;
-    align-self: center;
 
     img {
         position: relative;
@@ -15,7 +14,12 @@
 
     .detailContainer {
         padding: 0;
-        .infoGrid {
+        .compareCheckbox {
+            label {
+                font-size: 0.875rem;
+            }
+        }
+        .details {
             margin-top: 16px;
             display: grid;
             grid-template-columns: min-content 1fr;
@@ -24,25 +28,9 @@
             :nth-child(odd) {
                 font-weight: 600;
             }
-
-            .quantityCounter {
-                display: flex;
-                align-items: center;
-                border-radius: 4px;
-                border: 1px solid #000000;
-                width: fit-content;
-
-                button {
-                    padding: 4px;
-
-                    svg {
-                        font-size: 0.875rem;
-                    }
-                }
-            }
         }
     }
 }
-// .container:hover {
-//     transform: scale(1.03);
-// }
+.container:hover {
+    transform: scale(1.03);
+}

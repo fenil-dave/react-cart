@@ -1,7 +1,7 @@
 const { Typography } = require("@mui/material");
 const { Box } = require("@mui/system");
 
-const PageNotFoundError = () => {
+const PageNotFoundError = ({ error = false }) => {
     return (
         <Box
             sx={{
@@ -16,7 +16,12 @@ const PageNotFoundError = () => {
             <Typography sx={{ fontSize: "2rem", fontWeight: 500 }}>
                 Oppps!
             </Typography>
-            <Typography>Seems like you are on a wrong path of life.</Typography>
+            {!error && (
+                <Typography>
+                    Seems like you are on a wrong path of life.
+                </Typography>
+            )}
+            {error && <Typography>Seems like you broke my CODE.</Typography>}
         </Box>
     );
 };

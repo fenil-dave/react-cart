@@ -70,7 +70,7 @@ export const data = [
             Models: "SM-A536B, SM-A536B/DS, SM-A536U, SM-A536U1, SM-A5360, SM-A536E, SM-A536E/DS, SM-A536V, SM-A536W",
             SAR: "0.75 W/kg (head)     1.58 W/kg (body)     ",
             "SAR EU": "0.89 W/kg (head)     1.60 W/kg (body)     ",
-            Price: "₹ 33,999 / $ 322.00 / £ 295.00 / € 333.99 / C$ 453.90",
+            Price: 33999,
         },
         Tests: {
             "Battery life": "Endurance rating 113h",
@@ -146,7 +146,7 @@ export const data = [
             Models: "SM-S901B, SM-S901B/DS, SM-S901U, SM-S901U1, SM-S901W, SM-S901N, SM-S9010, SM-S901E, SM-S901E/DS",
             SAR: "1.03 W/kg (head)     1.15 W/kg (body)     ",
             "SAR EU": "1.21 W/kg (head)     1.59 W/kg (body)     ",
-            Price: "₹ 52,180 / $ 299.99 / £ 569.99 / € 613.00 / C$ 877.37",
+            Price: 52180,
         },
         Tests: {
             "Battery life": "Endurance rating 85h",
@@ -223,7 +223,7 @@ export const data = [
         misc: {
             Colors: "Chalk, Charcoal, Sage",
             Models: "GX7AS, GB62Z, G1AZG",
-            Price: "₹ 31,750 / $ 300.00 / £ 284.00 / € 328.50 / C$ 487.99",
+            Price: 31750,
         },
         Tests: {
             "Battery life": "Endurance rating 94h",
@@ -302,7 +302,7 @@ export const data = [
             Models: "SM-A336E, SM-A336B, SM-A336B/DS, SM-A336B/DSN, SM-A336E/DS, SM-A336M",
             SAR: "0.35 W/kg (head)     ",
             "SAR EU": "0.57 W/kg (head)     1.59 W/kg (body)     ",
-            Price: "₹ 24,400 / $ 262.00 / £ 237.00 / € 270.99 / C$ 357.14",
+            Price: 24400,
         },
         Tests: {
             "Battery life": "Endurance rating 104h",
@@ -377,7 +377,7 @@ export const data = [
         },
         misc: {
             Colors: "White, Black, Flora Green, Mountain Blue, Red, Blue, Yellow, Green, Gray",
-            Price: "About 550 EUR",
+            Price: "30000",
         },
         image: "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-13-red.jpg",
         name: "Xiaomi 13",
@@ -450,7 +450,7 @@ export const data = [
             Models: "SM-G990B, SM-G990B/DS, SM-G990U, SM-G990U1, SM-G990W, SM-G990E, SM-G9900, SM-G990B2",
             SAR: "0.77 W/kg (head)     0.90 W/kg (body)     ",
             "SAR EU": "0.95 W/kg (head)     1.48 W/kg (body)     ",
-            Price: "₹ 41,480 / $ 244.99 / £ 429.00 / € 491.99 / C$ 799.98",
+            Price: 41480,
         },
         Tests: {
             "Battery life": "Endurance rating 92h",
@@ -527,7 +527,7 @@ export const data = [
         misc: {
             Colors: "Obsidian, Lemongrass, Snow",
             Models: "GVU6C, GQML3",
-            Price: "₹ 54,850 / $ 459.99 / £ 497.42 / € 595.42 / C$ 1,343.00",
+            Price: 54850,
         },
         Tests: {
             "Battery life": "Endurance rating 96h",
@@ -603,7 +603,7 @@ export const data = [
         misc: {
             Colors: "Starry Blue, Moonlight White, Sunset Red, Midnight Black",
             Models: "AI2202-1A006EU, AI2202",
-            Price: "$ 629.00 / £ 653.26 / € 741.89",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 108h",
@@ -681,7 +681,7 @@ export const data = [
             Models: "A2890, A2650, A2889, A2892, iphone15,2",
             SAR: "1.15 W/kg (head)     1.15 W/kg (body)     ",
             "SAR EU": "0.98 W/kg (head)     0.98 W/kg (body)     ",
-            Price: "₹ 129,900 / $ 998.90 / € 1,299.00",
+            Price: 129900,
         },
         Tests: {
             "Battery life": "Endurance rating 86h",
@@ -759,7 +759,7 @@ export const data = [
             Models: "A2633, A2482, A2631, A2634, A2635, iphone14,5",
             SAR: "1.18 W/kg (head)     1.19 W/kg (body)     ",
             "SAR EU": "0.99 W/kg (head)     0.98 W/kg (body)     ",
-            Price: "₹ 69,900 / $ 584.95 / £ 695.00 / € 839.00 / Rp 16,614,000",
+            Price: 69900,
         },
         Tests: {
             "Battery life": "Endurance rating 89h",
@@ -836,7 +836,7 @@ export const data = [
             Models: "A2882, A2649, A2881, A2884, A2883, iphone14,7",
             SAR: "1.15 W/kg (head)     1.16 W/kg (body)     ",
             "SAR EU": "0.98 W/kg (head)     0.98 W/kg (body)     ",
-            Price: "₹ 77,490 / $ 799.99 / £ 770.00 / € 919.00",
+            Price: 77490,
         },
         Tests: {
             "Battery life": "Endurance rating 90h",
@@ -909,7 +909,7 @@ export const data = [
         },
         misc: {
             Colors: "Black, Green, White",
-            Price: "About 1100 EUR",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 83h",
@@ -989,7 +989,7 @@ export const data = [
             Models: "SM-A528B, SM-A528B/DS, SM-A528N",
             SAR: "0.72 W/kg (head)     ",
             "SAR EU": "0.88 W/kg (head)     0.84 W/kg (body)     ",
-            Price: "₹ 35,990 / $ 349.99 / £ 284.99 / € 309.00 / C$ 885.00 / Rp 6,499,000",
+            Price: 35990,
         },
         Tests: {
             "Battery life": "Endurance rating 113h",
@@ -1066,7 +1066,7 @@ export const data = [
             Colors: "Black, White, Red, Green, Blue, Purple",
             Models: "A2403, A2172, A2402, A2404, iPhone13,2",
             "SAR EU": "0.99 W/kg (head)     0.99 W/kg (body)     ",
-            Price: "₹ 49,900 / $ 399.00 / £ 598.00 / € 679.00 / Rp 12,275,000",
+            Price: 49900,
         },
         Tests: {
             "Battery life": "Endurance rating 84h",
@@ -1142,7 +1142,7 @@ export const data = [
             Models: "SM-S906B, SM-S906B/DS, SM-S906U, SM-S906U1, SM-S906W, SM-S906N, SM-S9060, SM-S906E, SM-S906E/DS",
             SAR: "1.19 W/kg (head)     1.08 W/kg (body)     ",
             "SAR EU": "0.57 W/kg (head)     1.40 W/kg (body)     ",
-            Price: "$ 455.00 / £ 750.00 / € 829.99 / C$ 1,109.99",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 97h",
@@ -1219,7 +1219,7 @@ export const data = [
             Models: "A063",
             SAR: "1.29 W/kg (head)     1.09 W/kg (body)     ",
             "SAR EU": "0.99 W/kg (head)     1.48 W/kg (body)     ",
-            Price: "₹ 29,884 / $ 745.00 / £ 349.99 / € 399.00",
+            Price: 29884,
         },
         Tests: {
             "Battery life": "Endurance rating 108h",
@@ -1297,7 +1297,7 @@ export const data = [
             Models: "SM-G781B, SM-G781B/DS, SM-G781U, SM-G781U1, SM-G781W, SM-G7810, SM-G781N, SM-G781V",
             SAR: "0.70 W/kg (head)     0.82 W/kg (body)     ",
             "SAR EU": "0.50 W/kg (head)     1.35 W/kg (body)     ",
-            Price: "₹ 37,990 / $ 268.45 / £ 399.99 / € 439.99 / Rp 6,899,000",
+            Price: 37990,
         },
         Tests: {
             "Battery life": "Endurance rating 110h",
@@ -1374,7 +1374,7 @@ export const data = [
         misc: {
             Colors: "Sorta Seafoam, Kinda Coral, Stormy Black",
             Models: "GB7N6, G9S9B16",
-            Price: "₹ 41,000 / $ 298.98 / £ 420.99 / € 458.00 / C$ 564.99",
+            Price: 41000,
         },
         Tests: {
             "Battery life": "Endurance rating 86h",
@@ -1452,7 +1452,7 @@ export const data = [
         misc: {
             Colors: "Green, Black, Ecru White",
             Models: "XQCQ62B-GC, XQCQ62G.GC, XQ-CQ72/B2TWCX0, XQ-CQ72/C2TWCX0, XQ-CQ72/G2TWCX0, XQCQ54C0B.YD, XQCQ54C0G.YD, XQCQ54C0C.YD, XQ-CQ54",
-            Price: "$ 798.00 / £ 799.00",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 116h",
@@ -1528,7 +1528,7 @@ export const data = [
             Models: "SM-G991B, SM-G991B/DS, SM-G991U, SM-G991U1, SM-G991W, SM-G991N, SM-G9910, SM-G991Q, SCG09",
             SAR: "0.74 W/kg (head)     1.08 W/kg (body)     ",
             "SAR EU": "0.46 W/kg (head)     1.51 W/kg (body)     ",
-            Price: "₹ 61,999 / $ 278.05 / £ 459.99 / € 519.00 / C$ 679.99 / Rp 12,999,000",
+            Price: 61999,
         },
         Tests: {
             "Battery life": "Endurance rating 93h",
@@ -1605,7 +1605,7 @@ export const data = [
         misc: {
             Colors: "Gray Shadow, Jade Fog",
             Models: "CPH2399, CPH2401",
-            Price: "₹ 28,999 / $ 327.09 / £ 335.45 / € 334.00 / C$ 609.00",
+            Price: 28999,
         },
         Tests: {
             "Battery life": "Endurance rating 100h",
@@ -1684,7 +1684,7 @@ export const data = [
             Models: "A2638, A2483, A2636, A2639, A2640, iPhone14,2",
             SAR: "1.20 W/kg (head)     1.19 W/kg (body)     ",
             "SAR EU": "0.99 W/kg (head)     0.98 W/kg (body)     ",
-            Price: "₹ 105,900 / $ 892.00 / £ 849.99 / € 1,096.37 / Rp 19,390,000",
+            Price: 105900,
         },
         Tests: {
             "Battery life": "Endurance rating 85h",
@@ -1763,7 +1763,7 @@ export const data = [
             Models: "A2783, A2595, A2785, A2782, A2784, iphone14,6",
             SAR: "0.98 W/kg (head)     0.99 W/kg (body)     ",
             "SAR EU": "1.20 W/kg (head)     1.19 W/kg (body)     ",
-            Price: "$ 210.00 / £ 397.48 / € 539.99",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 62h",
@@ -1840,7 +1840,7 @@ export const data = [
             Colors: "Cloudy Blue, Ice White",
             Models: "TA-1450, TA-1443",
             "SAR EU": "0.79 W/kg (head)     1.37 W/kg (body)     ",
-            Price: "$ 549.00 / £ 299.99 / € 339.83",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 94h",
@@ -1920,7 +1920,7 @@ export const data = [
             Models: "2201123G, 2201123C",
             SAR: "1.09 W/kg (head)     0.91 W/kg (body)     ",
             "SAR EU": "0.60 W/kg (head)     1.00 W/kg (body)     ",
-            Price: "$ 510.00 / £ 439.13 / € 497.00",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 82h",
@@ -2000,7 +2000,7 @@ export const data = [
             Models: "2203129G",
             SAR: "1.09 W/kg (head)     0.73 W/kg (body)     ",
             "SAR EU": "0.60 W/kg (head)     1.00 W/kg (body)     ",
-            Price: "$ 359.00 / € 370.07",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 100h",
@@ -2077,7 +2077,7 @@ export const data = [
             Colors: "Silver, Graphite, Gold, Pacific Blue",
             Models: "A2407, A2341, A2406, A2408, iPhone13,3",
             "SAR EU": "0.99 W/kg (head)     0.99 W/kg (body)     ",
-            Price: "$ 575.00 / £ 599.99 / € 1,448.89 / C$ 1,020.00",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 81h",
@@ -2155,7 +2155,7 @@ export const data = [
             Models: "A2628, A2481, A2626, A2629, A2630, iphone14,4",
             SAR: "1.19 W/kg (head)     1.19 W/kg (body)     ",
             "SAR EU": "0.97 W/kg (head)     0.98 W/kg (body)     ",
-            Price: "₹ 65,900 / $ 647.95 / £ 639.00 / € 765.99 / Rp 14,566,220",
+            Price: 65900,
         },
         Tests: {
             "Battery life": "Endurance rating 75h",
@@ -2231,7 +2231,7 @@ export const data = [
         misc: {
             Colors: "Just Black, Sorta Sage",
             Models: "GD1YQ, GTT9Q",
-            Price: "₹ 37,745 / $ 185.94 / £ 599.99 / € 416.90 / C$ 799.00",
+            Price: 37745,
         },
         Tests: {
             "Battery life": "Endurance rating 95h",
@@ -2306,7 +2306,7 @@ export const data = [
             Colors: "Elegant Black, Sunrise Gold, Surfing Blue",
             Models: "V2202",
             SAR: "0.94 W/kg (head)     1.24 W/kg (body)     ",
-            Price: "₹ 27,240",
+            Price: 27240,
         },
         Tests: {
             "Battery life": "Endurance rating 120h",
@@ -2383,7 +2383,7 @@ export const data = [
             Colors: "Black, White, Red, Green, Blue, Purple",
             Models: "A2399, A2176, A2398, A2400, A2399, iPhone13,1",
             "SAR EU": "0.99 W/kg (head)     0.99 W/kg (body)     ",
-            Price: "₹ 42,999 / $ 325.00 / £ 579.00 / € 595.99 / Rp 10,285,000",
+            Price: 42999,
         },
         Tests: {
             "Battery life": "Endurance rating 69h",
@@ -2460,7 +2460,7 @@ export const data = [
         },
         misc: {
             Colors: "Meteor Grey, Supermoon Silver, Aurora Green",
-            Price: "₹ 26,499 / $ 515.00 / £ 615.77 / € 449.99",
+            Price: 26499,
         },
         image: "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-30-.jpg",
         name: "Motorola Edge 30",
@@ -2533,7 +2533,7 @@ export const data = [
         misc: {
             Colors: "Black, White, Mint, Lavender",
             Models: "XQ-CC54, XQ-CC72",
-            Price: "$ 352.81 / £ 320.16 / € 369.52",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 163h",
@@ -2608,7 +2608,7 @@ export const data = [
             Colors: "Pure Black, Sailing Blue",
             Models: "V2158",
             SAR: "1.19 W/kg (head)     0.88 W/kg (body)     ",
-            Price: "₹ 31,999",
+            Price: 31999,
         },
         Tests: {
             "Battery life": "Endurance rating 101h",
@@ -2687,7 +2687,7 @@ export const data = [
         },
         misc: {
             Colors: "Neptune Blue, Cosmic Grey, Solar Gold, Aurora White",
-            Price: "$ 679.00 / £ 615.77 / € 599.94",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 101h",
@@ -2763,7 +2763,7 @@ export const data = [
         misc: {
             Colors: "Winter Mist, Arctic Sky, Astral Black",
             Models: "LE2113, LE2111, LE2110, LE2117, LE2115",
-            Price: "$ 290.00 / £ 425.00 / € 395.00 / C$ 616.04",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 87h",
@@ -2841,7 +2841,7 @@ export const data = [
         misc: {
             Colors: "Gray Sierra, Blue Haze, Green Wood, Pac-Man Edition",
             Models: "DN2101, DN2103",
-            Price: "$ 419.39 / £ 294.97 / € 299.00",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 102h",
@@ -2916,7 +2916,7 @@ export const data = [
         },
         misc: {
             Colors: "Mostly Black",
-            Price: "$ 339.03 / C$ 375.32",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 122h",
@@ -2990,7 +2990,7 @@ export const data = [
         },
         misc: {
             Colors: "Very Peri, Black Onyx, Ice Palace, Aqua Foam",
-            Price: "$ 559.00 / £ 299.99 / € 339.84",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 104h",
@@ -3066,7 +3066,7 @@ export const data = [
         misc: {
             Colors: "Blue",
             Models: "GN2200",
-            Price: "$ 288.99 / £ 300.88",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 129h",
@@ -3145,7 +3145,7 @@ export const data = [
             Models: "SM-A526B, SM-A526B/DS, SM-A5260, SM-A526W, SM-A526U, SM-A526U1",
             SAR: "0.74 W/kg (head)     0.53 W/kg (body)     ",
             "SAR EU": "1.05 W/kg (head)     1.42 W/kg (body)     ",
-            Price: "$ 249.94 / £ 289.00 / € 395.99 / Rp 6,499,000",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 111h",
@@ -3221,7 +3221,7 @@ export const data = [
         misc: {
             Colors: "Black, Gray, White, Aurora",
             Models: "RMX3363, RMX3360",
-            Price: "$ 309.90 / £ 379.00 / € 312.64 / Rp 4,709,000",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 114h",
@@ -3296,7 +3296,7 @@ export const data = [
             Models: "SM-G981, SM-G981F, SM-G981F/DS, SM-G981B/DS, SM-G981U, SM-G981U1, SM-G981N, SM-G981B, SM-G9810, SM-G981W, SC-51A, SCG01",
             SAR: "1.07 W/kg (head)     1.03 W/kg (body)     ",
             "SAR EU": "0.38 W/kg (head)     1.52 W/kg (body)     ",
-            Price: "$ 243.00 / £ 894.99 / C$ 874.97 / Rp 5,950,000",
+            Price: "30000",
         },
         image: "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s20-.jpg",
         name: "Samsung Galaxy S20 5G",
@@ -3368,7 +3368,7 @@ export const data = [
             Colors: "Sunshine Gold, Stardust Black",
             Models: "V2130",
             SAR: "1.08 W/kg (head)     0.72 W/kg (body)     ",
-            Price: "₹ 27,189 / £ 439.00 / € 499.00",
+            Price: 27189,
         },
         Tests: {
             "Battery life": "Endurance rating 103h",
@@ -3446,7 +3446,7 @@ export const data = [
         misc: {
             Colors: "Just Black, Clearly White",
             Models: "GD1YQ, G025I",
-            Price: "₹ 29,900 / $ 128.35 / £ 332.16 / € 351.35 / C$ 389.99",
+            Price: 29900,
         },
         image: "https://fdn2.gsmarena.com/vv/bigpic/google-pixel-4a-5g.jpg",
         name: "Google Pixel 4a 5G",
@@ -3518,7 +3518,7 @@ export const data = [
             Models: "SM-F926B, SM-F926B/DS, SM-F926U, SM-F926U1, SM-F926W, SM-F9260, SM-F926N",
             SAR: "0.73 W/kg (head)     1.22 W/kg (body)     ",
             "SAR EU": "1.04 W/kg (head)     1.44 W/kg (body)     ",
-            Price: "₹ 96,999 / $ 1,079.99 / £ 989.00 / € 1,079.00 / Rp 24,999,000",
+            Price: 96999,
         },
         Tests: {
             "Battery life": "Endurance rating 75h",
@@ -3595,7 +3595,7 @@ export const data = [
         misc: {
             Colors: "Blue Marble, Gray Onyx (Gray Ash)",
             Models: "AC2001, AC2003",
-            Price: "$ 304.00 / £ 354.99 / € 349.99 / C$ 885.00",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 100h",
@@ -3672,7 +3672,7 @@ export const data = [
         misc: {
             Colors: "Black, Blue, Violet, Silver",
             Models: "2209129SC",
-            Price: "About 350 EUR",
+            Price: "30000",
         },
         image: "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-civi2.jpg",
         name: "Xiaomi Civi 2",
@@ -3748,7 +3748,7 @@ export const data = [
             Colors: "Gray, Blue, Purple",
             Models: "2112123AC, 2112123AG",
             "SAR EU": "0.59 W/kg (head)     1.00 W/kg (body)     ",
-            Price: "$ 456.48 / € 529.00",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 105h",
@@ -3827,7 +3827,7 @@ export const data = [
         misc: {
             Colors: "Black, Green, Pink",
             Models: "XQBQ62/G, XQBQ52G.UKCX, XQBQ52B.UKCX, XQ-BQ52, XQ-BQ72, XQ-BQ42",
-            Price: "$ 573.30 / £ 599.00 / € 629.00",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 100h",
@@ -3902,7 +3902,7 @@ export const data = [
         },
         misc: {
             Colors: "Starlight Black, Dawnlight Gold",
-            Price: "About 350 EUR",
+            Price: "30000",
         },
         image: "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno8z-5g.jpg",
         name: "Oppo Reno8 Z",
@@ -3974,7 +3974,7 @@ export const data = [
         misc: {
             Colors: "Silver Frost, Blush Gold, Deep Sea Blue, Ice White, Black",
             Models: "ELS-NX9, ELS-N04, ELS-AN00, ELS-TN00",
-            Price: "$ 1,039.00 / £ 649.99 / € 716.28 / C$ 1,595.00 / Rp 9,999,000",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 94h",
@@ -4051,7 +4051,7 @@ export const data = [
         misc: {
             Colors: "Obsidian Black, Horizon Silver",
             Models: "ZS590KS, ZS590KS-2A007EU, I006D",
-            Price: "$ 416.10 / £ 549.99 / € 534.99",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 88h",
@@ -4130,7 +4130,7 @@ export const data = [
             Models: "PEQM00, CPH2251",
             SAR: "1.14 W/kg (head)     0.08 W/kg (body)     ",
             "SAR EU": "0.96 W/kg (head)     1.18 W/kg (body)     ",
-            Price: "₹ 28,999 / $ 352.89 / £ 436.64 / € 299.99 / Rp 7,999,000",
+            Price: 28999,
         },
         Tests: {
             "Battery life": "Endurance rating 109h",
@@ -4207,7 +4207,7 @@ export const data = [
         misc: {
             Colors: "Black, Grey, Blue, Pink",
             Models: "SO-52A, XQ-AS52, XQ-AS62, XQ-AS72, A002SO, SOG02",
-            Price: "$ 357.20 / £ 415.00 / € 699.90",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 102h",
@@ -4283,7 +4283,7 @@ export const data = [
         misc: {
             Colors: "Blue Void, Charkoal Ink, Silver Ray",
             Models: "EB2101, EB2103",
-            Price: "$ 244.00 / £ 295.00 / € 269.22",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 117h",
@@ -4360,7 +4360,7 @@ export const data = [
         misc: {
             Colors: "Frost Crystal, Amber Red, Emerald Green, Midnight Black, Honor Code",
             Models: "NTH-AN00, NTH-NX9",
-            Price: "$ 364.48 / £ 350.00 / € 449.99",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 100h",
@@ -4436,7 +4436,7 @@ export const data = [
         misc: {
             Colors: "Galactic Silver, Azure Blue, Starry Black",
             Models: "PEGM00, PEGT00, CPH2145",
-            Price: "$ 705.00 / £ 419.00 / € 531.41",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 109h",
@@ -4509,7 +4509,7 @@ export const data = [
         misc: {
             Colors: "Rainbow Spectrum, Cosmic Black, Dawnlight Gold, Starlight Black",
             Models: "CPH2341, CPH2455",
-            Price: "₹ 25,990",
+            Price: 25990,
         },
         image: "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno7-z-5g.jpg",
         name: "Oppo F21 Pro 5G",
@@ -4584,7 +4584,7 @@ export const data = [
         misc: {
             Colors: "Gray, White, Purple, Green",
             Models: "2206123SC",
-            Price: "About 570 EUR",
+            Price: "30000",
         },
         image: "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-12s.jpg",
         name: "Xiaomi 12S",
@@ -4654,7 +4654,7 @@ export const data = [
         misc: {
             Colors: "Turbo Black, Turbo Cyan",
             Models: "V2151",
-            Price: "About 300 EUR",
+            Price: "30000",
         },
         image: "https://fdn2.gsmarena.com/vv/bigpic/vivo-t1-5g-778g.jpg",
         name: "vivo T1 Pro",
@@ -4728,7 +4728,7 @@ export const data = [
         misc: {
             Colors: "Starlight Black, Startrails Blue, Gold, League of Legends",
             Models: "PFDM00, CPH2293",
-            Price: "₹ 34,999 / $ 455.42",
+            Price: 34999,
         },
         image: "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno7-pro-r.jpg",
         name: "Oppo Reno7 Pro 5G",
@@ -4800,7 +4800,7 @@ export const data = [
         misc: {
             Colors: "New Aurora Black",
             Models: "LM-V500, LM-V500N, LM-V500EM, LM-V500XM, LM-V450PM, LM-V450",
-            Price: "About 550 EUR",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 96h",
@@ -4876,7 +4876,7 @@ export const data = [
         misc: {
             Colors: "Black, White, Blue, Pink",
             Models: "SO-52B, SOG04, XQ-BT52, A102SO",
-            Price: "$ 746.00 / £ 454.50 / € 514.68",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 137h",
@@ -4955,7 +4955,7 @@ export const data = [
             Colors: "Black, Blue, Aurora, Majestic Gold, Diwali Edition",
             Models: "PEPM00, CPH2249",
             SAR: "1.17 W/kg (head)     1.03 W/kg (body)     ",
-            Price: "$ 412.03 / Rp 10,499,000",
+            Price: "30000",
         },
         image: "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno6-pro-5g.jpg",
         name: "Oppo Reno6 Pro 5G",
@@ -5030,7 +5030,7 @@ export const data = [
             Colors: "Prism Cube Black, Prism Cube White, Prism Cube Pink",
             Models: "SM-A516F, SM-A516F/DSN, SM-A516N, SM-A516B/DS, SM-A516B, SM-A516U, SC-54A, SM-A516U1, SCG07",
             "SAR EU": "0.50 W/kg (head)     1.55 W/kg (body)     ",
-            Price: "$ 130.99 / £ 274.49",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 90h",
@@ -5103,7 +5103,7 @@ export const data = [
         misc: {
             Colors: "Black, White, Purple",
             Models: "PEUM00",
-            Price: "About 1070 EUR",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 90h",
@@ -5178,7 +5178,7 @@ export const data = [
             Colors: "Sunshine Gold, Stardust Black",
             Models: "V2132",
             SAR: "1.22 W/kg (head)     0.63 W/kg (body)     ",
-            Price: "₹ 33,990",
+            Price: 33990,
         },
         Tests: {
             "Battery life": "Endurance rating 110h",
@@ -5253,7 +5253,7 @@ export const data = [
             Colors: "Dusk Blue, Sunset Dazzle, Arctic White",
             Models: "V2050",
             SAR: "1.05 W/kg (head)     0.87 W/kg (body)     ",
-            Price: "₹ 26,650 / £ 329.00 / € 289.00 / Rp 5,326,000",
+            Price: 26650,
         },
         Tests: {
             "Battery life": "Endurance rating 123h",
@@ -5328,7 +5328,7 @@ export const data = [
         misc: {
             Colors: "Cosmic Black, Aurora Dawn, White",
             Models: "V2134A, V2105",
-            Price: "$ 659.99",
+            Price: "30000",
         },
         Tests: {
             "Battery life": "Endurance rating 123h",
