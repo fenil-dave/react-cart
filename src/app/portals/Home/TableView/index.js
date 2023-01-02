@@ -41,7 +41,6 @@ const TableProductView = () => {
                     selector: `misc.${columnKey}`,
                 })
             );
-            console.log(updatedColumns);
             setColumns(updatedColumns);
         }
     }, [products]);
