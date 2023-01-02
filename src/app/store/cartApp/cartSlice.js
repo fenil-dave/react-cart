@@ -175,6 +175,8 @@ export const {
 
 export const getProducts = (state) => state.cartApp.products;
 
+export const getInventory = (state) => state.cartApp.inventory;
+
 export const getTableFields = (state) => state.cartApp.compareTableFields;
 export const getTableGrid = (state) => state.cartApp.compareGrid;
 export const getCompareProducts = (state) => state.cartApp.compareProducts;
@@ -222,6 +224,12 @@ export const getTotalCartItems = createSelector([getCartState], (cartData) =>
 export const getIsProductBeingCompare = (id) =>
     createSelector([getCompareProducts], (compareData) =>
         compareData.map((item) => item.id).includes(id)
+    );
+
+export const getAvailableQuantity = (id) =>
+    createSelector(
+        [getInventory],
+        (inventory) => inventory[id]?.quantity_available || 0
     );
 
 export default cartAppSlice.reducer;

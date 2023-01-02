@@ -19,9 +19,11 @@ import {
     getIsProductBeingCompare,
     addProductCompare,
     removeProductCompare,
+    getAvailableQuantity,
 } from "app/store/cartApp/cartSlice";
 import { createStructuredSelector } from "reselect";
 import { shouldProductAddToCart } from "app/utils/helpers";
+import Show from "app/hoc/Show";
 
 const ALLOWED_FIELDS = ["Colors", "Price", "Models"];
 
@@ -29,13 +31,13 @@ const mapCardToState = (id) =>
     createStructuredSelector({
         productCountInCart: getProductCountInCart(id),
         isProductBeingCompare: getIsProductBeingCompare(id),
+        availableQuantity: getAvailableQuantity(id),
     });
 
 const ProductCard = ({ data }) => {
     const dispatch = useDispatch();
-    const { productCountInCart, isProductBeingCompare } = useSelector(
-        mapCardToState(data.id)
-    );
+    const { productCountInCart, isProductBeingCompare, availableQuantity } =
+        useSelector(mapCardToState(data.id));
     const { misc, name } = data;
 
     const handleAddToCart = () => {
@@ -73,6 +75,13 @@ const ProductCard = ({ data }) => {
                         </Badge>
                     </IconButton>
                 </Box>
+                <Show when={availableQuantity < 5}>
+                    <Typography className={classes.lowStock}>
+                        {availableQuantity
+                            ? "Only few items left."
+                            : "Out of stock."}
+                    </Typography>
+                </Show>
                 <Box className={classes.compareCheckbox}>
                     <FormGroup>
                         <FormControlLabel
