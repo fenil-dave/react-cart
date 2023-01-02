@@ -38,11 +38,11 @@ const AppbarContainer = () => {
                 <Box sx={{ display: { xs: "none", sm: "block" } }}>
                     {navItems.map((item) => (
                         <WithCondition
+                            key={item.path}
                             when={item.badge}
                             then={
                                 <Badge color="error" badgeContent={item.count}>
                                     <NavLink
-                                        key={item.path}
                                         className={classes.navlink}
                                         to={item.path}
                                     >
@@ -52,7 +52,6 @@ const AppbarContainer = () => {
                             }
                             or={
                                 <NavLink
-                                    key={item.path}
                                     className={classes.navlink}
                                     to={item.path}
                                 >

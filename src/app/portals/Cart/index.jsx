@@ -13,7 +13,7 @@ const CartContainer = () => {
         <>
             <Box className={classes.container}>
                 {productsInCart.map((productId) => (
-                    <CartCardContainer id={productId} />
+                    <CartCardContainer id={productId} key={productId} />
                 ))}
             </Box>
             <TotalContainer />

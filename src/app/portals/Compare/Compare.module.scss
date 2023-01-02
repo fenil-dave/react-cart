@@ -1,0 +1,19 @@
+.compareTable {
+    border-spacing: 0px;
+
+    tr {
+        td,
+        th {
+            border-right: 1px solid #000000;
+            padding: 8px;
+        }
+
+        td,
+        th {
+            :last-child {
+                border-right: 0px !important;
+                padding: 8px;
+            }
+        }
+    }
+}

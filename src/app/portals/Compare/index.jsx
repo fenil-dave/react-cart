@@ -1,4 +1,3 @@
-import Fakedata from "app/@fakedata";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -9,8 +8,8 @@ import {
 } from "app/store/cartApp/cartSlice";
 import queryString from "query-string";
 import { createStructuredSelector } from "reselect";
-import styled from "styled-components";
-import SpecInfoContainer from "./ProductDetails/SpecInfo";
+import SpecInfoContainer from "./SpecInfo";
+import classes from "./Compare.module.scss";
 
 const mapContainerToState = createStructuredSelector({
     tableFields: getTableFields,
@@ -45,7 +44,7 @@ const CompareContainer = () => {
     }, [location.search]);
 
     return (
-        <table>
+        <table className={classes.compareTable} border>
             <tbody>
                 {["name", "image", ...Object.keys(tableFields)].map(
                     (specKey) => (

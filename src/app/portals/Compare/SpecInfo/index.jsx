@@ -13,8 +13,8 @@ const SpecInfoContainer = ({ title, detailKeys }) => {
 
     return (
         <>
-            <tr>
-                <Typography className={classes.title}>{title}</Typography>
+            <tr className={classes.title}>
+                <th colSpan={4}>{title.split("_").join(" ")}</th>
             </tr>
             <WithCondition
                 when={Array.isArray(detailKeys)}
