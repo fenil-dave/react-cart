@@ -81,14 +81,19 @@ export const cartAppSlice = createSlice({
             const { id, operation } = action.payload;
             if (operation === ADDTION_OPERATION) {
                 state.cart[id] = currentCart[id] + 1;
+                state.inventory[id] = {
+                    ...currentInventory[id],
+                    quantity_available:
+                        currentInventory[id].quantity_available - 1,
+                };
             } else {
                 if (state.cart[id] === 1) {
-                    const productCount = currentCart[id];
                     delete currentCart[id];
                     state.cart = currentCart;
                     state.inventory[id] = {
                         ...currentInventory[id],
-                        quantity_available: productCount,
+                        quantity_available:
+                            currentInventory[id].quantity_available + 1,
                     };
                 } else {
                     state.inventory[id] = {
