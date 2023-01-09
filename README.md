@@ -29,3 +29,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `docker build -t [image_name:image_tag] .`
 
 ### `docker run -d -p 80:80 [image_name:image_tag]`
+
+Now copy this link and paste it in the browser [http://localhost](http://localhost)
